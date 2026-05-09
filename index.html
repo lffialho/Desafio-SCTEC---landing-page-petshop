@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Lava Patas - Pet Shop</title>
+</head>
+<body>
+  <header class="topo">
+    <div class="container barra">
+      <h1 class="logo">
+        <a href="#hero" aria-label="Lava Patas - início">
+          <span class="logo-simbolo" aria-hidden="true">🐾</span>
+          Lava Patas
+        </a>
+      </h1>
+
+      <button class="menu-botao" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav id="menu-principal" class="menu" aria-label="Navegação principal">
+        <a href="#hero">Início</a>
+        <a href="#sobre">Nossa História</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="revelar" aria-labelledby="hero-titulo">
+      <div class="luz" aria-hidden="true"></div>
+      <div class="patinhas" aria-hidden="true">
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+        <span>🐾</span>
+      </div>
+
+      <div class="container grade">
+        <div class="chamada">
+          <p class="rotulo">Petshop de bairro para todo tipo de pet</p>
+          <h2 id="hero-titulo">Banho, ração<br>e carinho no capricho</h2>
+          <p class="descricao">
+            Aqui tem banho e tosa, veterinário, hotelzinho, brinquedo e aquele atendimento que chama seu pet pelo nome.
+          </p>
+          <div class="acoes">
+            <button class="botao principal" type="button" data-modal-abrir>Agendar visita</button>
+            <button class="botao secundario" type="button" data-scroll="#servicos">Conhecer serviços</button>
+          </div>
+        </div>
+
+        <figure class="vitrine">
+          <div class="moldura">
+            <div class="foto foto-loja" role="img" aria-label="Atendimento em petshop de bairro com entrada acessível"></div>
+          </div>
+          <aside class="promocao" aria-label="Promoção por tempo limitado">
+            <span>Por tempo limitado</span>
+            <strong>2º pet com 50% off</strong>
+            <p>No banho & tosa. Pode chamar o pet de outro tutor.</p>
+          </aside>
+          <figcaption class="avaliacao">
+            <span>★ 5.0</span>
+          </figcaption>
+          <div class="sombra" aria-hidden="true"></div>
+        </figure>
+      </div>
+
+      <div class="onda" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path class="onda-cor" d="M0,60 C360,120 720,0 1440,60 L1440,120 L0,120 Z"/>
+        </svg>
+      </div>
+    </section>
+
+    <section id="sobre" class="revelar" aria-labelledby="sobre-titulo">
+      <div class="container sobre-grade">
+        <figure class="sobre-foto">
+          <div class="foto foto-gigi" role="img" aria-label="Gigi, a gata da loja, sentada no balcão do petshop"></div>
+          <figcaption class="etiqueta">Gigi, nossa gata</figcaption>
+        </figure>
+
+        <div class="sobre-conteudo">
+          <p class="rotulo">Nossa história</p>
+          <h2 id="sobre-titulo">Petshop raiz, cuidado de família</h2>
+          <p class="texto-longo">
+            O Lava Patas nasceu da vontade de ter um lugar simples de confiar: banho bem feito, produto bom na prateleira, veterinário por perto e uma equipe que trata cada pet como conhecido de casa.
+          </p>
+          <p class="texto-longo">
+            Nossa gata Gigi vive pela loja lembrando todo mundo que petshop bom tem movimento, conversa, ração chegando, pelo secando e carinho de verdade no balcão.
+          </p>
+
+          <div class="metricas" aria-label="Números do Lava Patas">
+            <div class="metrica">
+              <span class="valor">1.070</span>
+              <p>Pets atendidos</p>
+            </div>
+            <div class="metrica">
+              <span class="valor">8</span>
+              <p>Anos de cuidado</p>
+            </div>
+            <div class="metrica">
+              <span class="valor">100</span>
+              <p>% satisfação</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="revelar" aria-labelledby="servicos-titulo">
+      <div class="container">
+        <p class="rotulo centralizado">O que oferecemos</p>
+        <h2 id="servicos-titulo" class="titulo">Serviços do dia a dia, no capricho</h2>
+
+        <div class="servicos">
+          <article class="servico">
+            <div class="servico-foto foto-banho" role="img" aria-label="Banho em cachorro com funcionária usando equipamentos de proteção e rampa de acesso"></div>
+            <div class="servico-conteudo">
+              <h3>Banho & Tosa</h3>
+              <p>Produtos seguros e técnicas tranquilas, sem pressa e sem assustar seu pet.</p>
+            </div>
+          </article>
+
+          <article class="servico">
+            <div class="servico-foto foto-consulta" role="img" aria-label="Consulta veterinária com profissional usando luvas e óculos de proteção"></div>
+            <div class="servico-conteudo">
+              <h3>Consultas</h3>
+              <p>Atendimento veterinário com profissionais que amam o que fazem.</p>
+            </div>
+          </article>
+
+          <article class="servico">
+            <div class="servico-foto foto-hotel" role="img" aria-label="Hotelzinho com cães, caminhas, portões seguros e rampa baixa"></div>
+            <div class="servico-conteudo">
+              <h3>Hotel</h3>
+              <p>Hotelzinho com espaço seguro, caminhas limpas, água fresca e supervisão de perto.</p>
+            </div>
+          </article>
+
+          <article class="servico">
+            <div class="servico-foto foto-corredor" role="img" aria-label="Corredor de loja com rações, brinquedos e coleiras"></div>
+            <div class="servico-conteudo">
+              <h3>Loja</h3>
+              <p>Rações, petiscos, coleiras, brinquedos e itens do dia a dia sempre à mão.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimento" class="revelar" aria-label="Depoimentos de clientes">
+      <div class="container">
+        <div class="depoimentos">
+          <article class="depoimento">
+            <div class="citacao" aria-hidden="true">"</div>
+            <p class="frase">
+              O Thor chega animado e volta relaxado. O banho é cuidadoso, o ambiente é calmo e a equipe trata cada detalhe com carinho.
+            </p>
+            <div class="autor">
+              <div class="avatar">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQFFBpwvGRAsLw/profile-displayphoto-scale_400_400/B4DZ2b2g2YJYAg-/0/1776436254702?e=2147483647&amp;v=beta&amp;t=NG6du255mSLCkuilZw7Gs9irPXAGiymZdVRZiXTtpm0" alt="Gabriela Slawski">
+              </div>
+              <div>
+                <strong>Gabriela Slawski</strong>
+                <span>Tutora do Thor</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="depoimento">
+            <div class="citacao" aria-hidden="true">"</div>
+            <p class="frase">
+              O Bento fica tranquilo desde a chegada. A equipe respeita o tempo dele, e cada visita termina com cuidado visível no pelo e no humor.
+            </p>
+            <div class="autor">
+              <div class="avatar">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQFv57y4j1e4TQ/profile-displayphoto-scale_100_100/B4DZyXPGBjJYAc-/0/1772063846379?e=1779926400&amp;v=beta&amp;t=PnSzlxrlkoS62o7rAswdRgr75KPsSKkX9GDokotOhwo" alt="Luiz Felipe">
+              </div>
+              <div>
+                <strong>Luiz Felipe</strong>
+                <span>Tutor do Bento</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="revelar" aria-labelledby="contato-titulo">
+      <div class="container contato-grade">
+        <div class="contato-conteudo">
+          <p class="rotulo">Fale conosco</p>
+          <h2 id="contato-titulo">Seu pet merece<br>o melhor cuidado</h2>
+          <p class="contato-texto">
+            Estamos aqui para recebê-los. Agende uma visita, tire dúvidas ou simplesmente venha nos conhecer.
+          </p>
+
+          <div class="dados">
+            <div class="dados-grade">
+              <address class="dado">
+                <span aria-hidden="true"><img src="https://img.icons8.com/plasticine/100/google-maps-new.png" alt=""></span>
+                <div>
+                  <p>Rua dos pets, 244<br>Florianópolis, SC</p>
+                  <a class="rota" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rua%20dos%20pets%2C%20244%2C%20Florian%C3%B3polis%2C%20SC" target="_blank" rel="noopener">Criar rota no Google Maps</a>
+                </div>
+              </address>
+
+              <div class="dado">
+                <span aria-hidden="true"><img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/relogios-icon-svg-download-png-14611633.png?f=webp&w=256" alt=""></span>
+                <p>Seg a Sáb: 9h às 19h<br>Dom: fechado</p>
+              </div>
+            </div>
+
+            <div class="mapa">
+              <iframe
+                title="Mapa da Lava Patas"
+                src="https://www.google.com/maps?q=Rua%20dos%20pets%2C%20244%2C%20Florian%C3%B3polis%2C%20SC&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="formulario">
+          <form id="formularioContato" novalidate>
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" placeholder="Como podemos ajudar?" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="botao principal enviar">
+              Enviar mensagem
+              <span class="icone-seta" aria-hidden="true">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container rodape">
+      <div class="rodape-marca">
+        <h2><span class="rodape-simbolo" aria-hidden="true">🐾</span> Lava Patas</h2>
+        <p>Banho caprichado, ração boa e carinho sem frescura.</p>
+      </div>
+      <nav class="rodape-links" aria-label="Links do rodapé">
+        <a href="#hero">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="direitos">
+        <p>© 2026 Lava Patas. Petshop de bairro, feito por gente que conhece cada pet pelo nome.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" aria-hidden="true">
+    <div class="modal-caixa">
+      <button class="modal-fechar" type="button" aria-label="Fechar agendamento">&times;</button>
+      <span class="modal-simbolo" aria-hidden="true">🐾</span>
+      <h2 id="modal-titulo">Agendar visita</h2>
+      <p>Escolha um dia para trazer seu pet. A equipe do Lava Patas deixa tudo separado para receber vocês.</p>
+      <form id="formularioAgendamento">
+        <div class="campo">
+          <label for="pet">Nome do pet</label>
+          <input type="text" id="pet" placeholder="Nome do pet" required>
+        </div>
+        <div class="campo">
+          <label for="whatsapp">WhatsApp</label>
+          <input type="tel" id="whatsapp" placeholder="(48) 99999-9999" autocomplete="tel" required>
+        </div>
+        <div class="campo">
+          <label for="tipoPet">Tipo de pet</label>
+          <select id="tipoPet" required>
+            <option value="">Selecione</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+            <option value="passarinho">Passarinho</option>
+            <option value="coelho">Coelho</option>
+            <option value="roedor">Roedor</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="porte">Porte do pet</label>
+          <select id="porte" required>
+            <option value="">Selecione</option>
+            <option value="pequeno">Pequeno porte</option>
+            <option value="medio">Médio porte</option>
+            <option value="grande">Grande porte</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="servico">Serviço desejado</label>
+          <select id="servico" required>
+            <option value="">Selecione</option>
+            <option value="banho">Banho & Tosa</option>
+            <option value="consulta">Consultas</option>
+            <option value="hotel">Hotel</option>
+            <option value="loja">Loja</option>
+          </select>
+        </div>
+        <fieldset class="hospedagem" id="hospedagemOpcoes" hidden>
+          <legend>Tipo de hospedagem</legend>
+          <label>
+            <input type="radio" name="hospedagem" value="individual">
+            <span>
+              Quarto individual
+              <small id="precoIndividual">Selecione o porte</small>
+            </span>
+          </label>
+          <label>
+            <input type="radio" name="hospedagem" value="compartilhado">
+            <span>
+              Quarto compartilhado
+              <small id="precoCompartilhado">Selecione o porte</small>
+            </span>
+          </label>
+        </fieldset>
+        <div class="campo">
+          <label for="data">Data da visita</label>
+          <input type="date" id="data" required>
+        </div>
+        <div class="estimativa" aria-live="polite">
+          <strong>Estimativa</strong>
+          <p id="precoEstimado">Selecione serviço e porte para ver uma estimativa.</p>
+          <small>Os valores são uma estimativa e podem sofrer alterações. Entraremos em contato pelo WhatsApp para confirmar as informações.</small>
+        </div>
+        <button class="botao principal" type="submit">Confirmar agendamento</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
